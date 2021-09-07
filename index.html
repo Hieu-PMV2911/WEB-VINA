@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thiết Kế Web Giá Rẻ - [Nhanh - Sạch - Đẹp]</title>
+	<link rel="stylesheet" href="./assest/css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="./assest/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+	<div class="header">
+		<div class="header__display">
+			<div class="header__display--img">
+				<a href="" class="">
+					<img src="./assest/img/logoVina.png" alt="">
+				</a>
+			</div>
+			<div class="header__display--replace">
+				<ul class="header__display--text">
+					<a href="" class="text-decoration hover__header--nav">
+						<li class="paadingg">Trang chủ</li>
+					</a>
+					<a href="" class="text-decoration hover__header--nav header__display--bonus">
+						<li class="paadingg header__display--down">
+							Kho giao diện 
+						</li>			
+					</a>
+					<a href="" class="text-decoration hover__header--nav">
+						<li class="paadingg">Kho ứng dụng</li>
+					</a>
+					<a href="" class="text-decoration hover__header--nav">
+						<li class="paadingg">Bảng giá</li>
+					</a>
+					<a href="" class="text-decoration hover__header--nav">
+						<li class="paadingg">Giới thiệu</li>
+					</a>
+					<a href="" class="text-decoration hover__header--nav">
+						<li class="paadingg">Tính năng </li>
+					</a>
+					<a href="" class="text-decoration hover__header--nav">
+						<li class="paadingg">Tin tức</li>
+					</a>
+					<a href="" class="text-decoration hover__header--nav">
+						<li class="paadingg">Liên hệ</li>
+					</a>
+					<a href="" class="text-decoration--LACO">
+						<img src="./assest/img/LACOVN.png" class="header__display--LACO" alt="">
+					</a>
+				</ul>	
+			</div>
+		</div>	
+		
+		<label class="menu__item--header" for="checkvaoemdine">
+			<i class="fas fa-bars"></i>
+			<p>MENU</p>
+		</label>
+		<input type="checkbox" id="checkvaoemdine" class="nav--input">
+
+
+		
+		<label class="overplay" for="checkvaoemdine">
+		</label>
+
+		<div class="header__display--replace--tablet">
+			<label class="header__display--replace--table--icon" for="checkvaoemdine">
+				<i class="fas fa-times"></i>
+			</label>
+			<ul class="header__display--text--tablet">
+				<a href="" class="text-decoration--tablet hover__header--nav--tablet">
+					<li class="paadingg--tablet">Trang chủ</li>
+				</a>
+				<a href="" class="text-decoration--tablet hover__header--nav header__display--bonus--tablet">
+					<li class="paadingg--tablet header__display--down--tablet">
+						Kho giao diện 
+					</li>			
+				</a>
+				<a href="" class="text-decoration--tablet hover__header--nav--tablet">
+					<li class="paadingg--tablet">Kho ứng dụng</li>
+				</a>
+				<a href="" class="text-decoration--tablet hover__header--nav--tablet">
+					<li class="paadingg--tablet">Bảng giá</li>
+				</a>
+				<a href="" class="text-decoration--tablet hover__header--nav--tablet">
+					<li class="paadingg--tablet">Giới thiệu</li>
+				</a>
+				<a href="" class="text-decoration--tablet hover__header--nav--tablet">
+					<li class="paadingg--tablet">Tính năng </li>
+				</a>
+				<a href="" class="text-decoration--tablet hover__header--nav--tablet">
+					<li class="paadingg--tablet">Tin tức</li>
+				</a>
+				<a href="" class="text-decoration--tablet hover__header--nav--tablet">
+					<li class="paadingg--tablet">Liên hệ</li>
+				</a>
+			</ul>	
+		</div>
+
+		
+	</div>
+
+	<!-- COntent -->
+
+	<div class="content">
+		<div class="content__first">
+			<div class="content__first--design">
+				<h1>Thiết Kế Web Giá Rẻ - [Nhanh - Sạch - Đẹp]</h1>
+			</div>
+			
+			<div class="content__first--design">
+				<h2>+ Hơn 1000 Giao Diện Cực Đẹp +</h2>
+			</div>
+			<div class="content__first--design--input">	
+				<form>
+					<input  type="text" placeholder="nhập từ khoá mẫu website....">
+					
+				</form>
+
+				<div class="content__first--design--input--css">
+					<a href=""><button><i class="fas fa-search content__first--design--input--icon"></i></button></a>
+				</div>
+				
+			</div>
+			<div class="content__first--design--creater">
+				<h3>Đa Dạng mẫu Website Bán Hàng - Giới Thiệu Công Ty - Bất Động Sản - Cá Nhân ... </h3>
+			</div>
+			<div class="content__first--design--img">
+				<img name="image" src="./assest/img/1.png" alt=""  class="imgClickAndChange" id="imgClickAndChange" onclick="changeImage()">
+				<script type="text/javascript">
+					window.onload = function(){
+					  setTimeout("switch_Image()", 3000);
+					}
+					var current = 1;
+					var num_image = 5;
+					function switch_Image(){
+					    current++;
+					    document.images['image'].src ='./assest/img/' + current + '.png';
+					   if(current < num_image){
+					     setTimeout("switch_Image()", 3000);
+					   }else if(current == num_image){
+					     current = 0;
+					     setTimeout("switch_Image()", 3000);
+					   }
+				       }
+				      </script>
+				
+			</div>
+
+			<!-- List  -->
+
+			<div class="list__group">
+					<div class="list__group--item">
+						<a href="" class="list__group--item--link">
+							<div class="list__group--item--navigation">
+								<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/c1.png" alt="">
+							</div>
+
+							<div class="list__group--item--content">
+								<h5 class="list__group--item--content--siv">Bán hàng - thương mại điện tử</h5>
+							</div>		
+						</a>
+						
+					</div>
+
+					<div class="list__group--item list__group--item--mobile--2">
+						<a href="" class="list__group--item--link">
+							<div class="list__group--item--navigation1">
+								<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/c2.png" alt="">
+							</div>
+
+							<div class="list__group--item--content">
+								<h5 class="list__group--item--content--siv">Giới thiệu công ty</h5>
+							</div>		
+						</a>
+						
+					</div>
+
+					<div class="list__group--item list__group--item--mobile">
+						<a href="" class="list__group--item--link">
+							<div class="list__group--item--navigation2">
+								<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/c3.png" alt="">
+							</div>
+
+							<div class="list__group--item--content">
+								<h5 class="list__group--item--content--siv">Ảnh viện áo cưới</h5>
+							</div>		
+						</a>
+						
+					</div>
+
+					<div class="list__group--item list__group--item--mobile--1">
+						<a href="" class="list__group--item--link">
+							<div class="list__group--item--navigation3">
+								<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/c4.png" alt="">
+							</div>
+
+							<div class="list__group--item--content">
+								<h5 class="list__group--item--content--siv">Nhà đất bất động sản</h5>
+							</div>		
+						</a>
+						
+					</div>
+
+					<div class="list__group--item list__group--item--css list__group--item--mobile--3">
+						<a href="" class="list__group--item--link">
+							<div class="list__group--item--navigation4">
+								<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/c5.png" alt="">
+							</div>
+
+							<div class="list__group--item--content">
+								<h5 class="list__group--item--content--siv">Nhà hàng khách sạn</h5>
+							</div>		
+						</a>
+						
+					</div>
+
+					<div class="list__group--item list__group--item--css--1">
+						<a href="" class="list__group--item--link">
+							<div class="list__group--item--navigation5">
+								<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/c6.png" alt="">
+							</div>
+
+							<div class="list__group--item--content">
+								<h5 class="list__group--item--content--siv">Giải trí du lịch</h5>
+							</div>		
+						</a>
+						
+					</div>
+					
+					
+				</div>
+				<!-- introduction -->
+
+			
+				<div class="list__introduction">
+					<div class="list__introduction--total">
+						<div class="list__introduction--box">	
+							<div class="list__introduction--button"> 
+								<button class="btn--button1">
+									Xem demo
+								</button>
+								<br>
+								<button class="btn--button2">
+									Xem chi tiết
+								</button>
+							</div>
+								<img src="https://vinawebsite.vn/wp-content/uploads/2019/02/desktop_21035-368x400.jpg" alt="">	
+								<div class="list__introduction--box--info">
+									<a href="" class="list__introduction--box--title">VNW_21035</a>
+									<p class="list__introduction--box--description">Nhà hàng khách sạn</p>
+								</div>
+						</div>
+
+						<div class="list__introduction--box">
+							<div class="list__introduction--button"> 
+								<button class="btn--button1">
+									Xem demo
+								</button>
+								<br>
+								<button class="btn--button2">
+									Xem chi tiết
+								</button>
+							</div>	
+							<img src="https://vinawebsite.vn/wp-content/uploads/2019/02/desktop_21747-368x400.jpg" alt="">		
+							<div class="list__introduction--box--info">
+									<a href="" class="list__introduction--box--title">VNW_21747</a>
+									<p class="list__introduction--box--description">Trang trí nội thất</p>
+								</div>
+						</div>
+
+						<div class="list__introduction--box list__introduction--box--none">
+							<div class="list__introduction--button"> 
+								<button class="btn--button1">
+									Xem demo
+								</button>
+								<br>
+								<button class="btn--button2">
+									Xem chi tiết
+								</button>
+							</div>	
+							<img src="https://vinawebsite.vn/wp-content/uploads/2019/02/desktop_21036-368x400.jpg" alt="">		
+							<div class="list__introduction--box--info">
+									<a href="" class="list__introduction--box--title">VNW_21036</a>
+									<p class="list__introduction--box--description">Nhà hàng khách sạn</p>
+								</div>
+						</div>
+					</div>
+
+					<div class="list__introduction--total">
+						<div class="list__introduction--box">
+							<div class="list__introduction--button"> 
+								<button class="btn--button1">
+									Xem demo
+								</button>
+								<br>
+								<button class="btn--button2">
+									Xem chi tiết
+								</button>
+							</div>	
+								<img src="https://vinawebsite.vn/wp-content/uploads/2019/02/desktop_21988-368x400.jpg" alt="">		
+								<div class="list__introduction--box--info">
+									<a href="" class="list__introduction--box--title">VNW_21988</a>
+									<p class="list__introduction--box--description">Giới thiệu công ty</p>
+								</div>
+						</div>
+
+						<div class="list__introduction--box">
+							<div class="list__introduction--button"> 
+								<button class="btn--button1">
+									Xem demo
+								</button>
+								<br>
+								<button class="btn--button2">
+									Xem chi tiết
+								</button>
+							</div>	
+							<img src="https://vinawebsite.vn/wp-content/uploads/2019/02/desktop_21747-368x400.jpg" alt="">		
+							<div class="list__introduction--box--info">
+									<a href="" class="list__introduction--box--title">VNW_21303</a>
+									<p class="list__introduction--box--description">Nhà đất bất động sản</p>
+								</div>
+						</div>
+
+					</div>
+					
+					
+				</div>
+
+
+
+				<!-- IMG why you need web -->
+
+				<div class="IMG__contruduction">
+					<img class="IMG__contruduction--replace" src="./assest/img/LOGOWEB.png" alt="">
+				</div>
+
+				<div class="IMG__contruduction2">
+					<img class="IMG__contruduction--replace2" src="./assest/img/QUANG_CAO.png" alt="">
+				</div>
+				<div>
+					<img class="IMG__contruduction--replace3" src="./assest/img/WEB1.png">
+				</div>
+
+				<div>
+					<img class="IMG__contruduction--replace4" src="./assest/img/WEB2.png">
+				</div>
+
+				<div>
+					<img class="IMG__contruduction--replace5" src="./assest/img/WEB3.png">
+				</div>
+
+
+				<!-- .reason native -->
+
+
+				<div class="reason__native">
+					<div class="reason__native--img">
+						<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/BG-quy-trinh_1.jpg" alt="">
+
+					</div>
+					<div class="reason__native--list">
+						<h1>Lý do chọn VINAWEBSITE</h2>
+						<h2>Khởi động thành công của bạn ngay hôm nay</h2>
+					</div>
+
+
+
+
+					<div class="replace__action--ss1">
+						<div class="list__group--item active__sision2">
+							<a href="" class="list__group--item--link replace__action--ss2">
+								<div class="list__group--item--navigation1 replace__action--ss3 none__none">
+									<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/1-2.png" alt="">
+								</div>
+	
+								<div class="list__group--item--content replace__action--ss4 replace__action--fix--mobile">
+									<h5 class="list__group--item--content--siv replace__action--ss5">Kho giao diện đa dạng phong phú, đa lĩnh vực, dễ dàng lựa chọn</h5>
+								</div>		
+							</a>
+							
+						</div>
+						
+						<div class="list__group--item active__sision2">
+							<a href="" class="list__group--item--link replace__action--ss2">
+								<div class="list__group--item--navigation1 replace__action--ss3 none__none ">
+									<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/2-2.png" alt="">
+								</div>
+	
+								<div class="list__group--item--content replace__action--ss4 replace__action--fix--mobile">
+									<h5 class="list__group--item--content--siv replace__action--ss5 replace__action--ss5--fix--mobile">VinaWebsite sẽ hỗ trợ bạn nhập dữ liệu lần đầu, thiết kế banner - logo</h5>
+								</div>		
+							</a>
+							
+						</div>
+	
+						<div class="list__group--item active__sision2">
+							<a href="" class="list__group--item--link replace__action--ss2">
+								<div class="list__group--item--navigation1 replace__action--ss3 none__none replace__action--fix--mobile">
+									<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/4-2.png" alt="">
+								</div>
+	
+								<div class="list__group--item--content replace__action--ss4 replace__action--fix--mobile--2">
+									<h5 class="list__group--item--content--siv replace__action--ss5 ">Website của bạn sẽ được thiết kế phù hợp với Google giúp SEO thuận tiện</h5>
+								</div>		
+							</a>
+							
+						</div>
+	
+						<div class="list__group--item active__sision2">
+							<a href="" class="list__group--item--link replace__action--ss2">
+								<div class="list__group--item--navigation1 replace__action--ss3 none__none">
+									<img src="	https://vinawebsite.vn/wp-content/uploads/2018/08/8-1.png" alt="">
+								</div>
+	
+								<div class="list__group--item--content replace__action--ss4 replace__action--fix--mobile--2">
+									<h5 class="list__group--item--content--siv replace__action--ss5">Hỗ trợ Marketing Online giúp website của bạn dễ dàng tiếp cận các khách hàng</h5>
+								</div>		
+							</a>
+							
+						</div>
+
+						
+	
+						
+					</div>
+
+
+					<!-- ////////////////// -->
+
+					<div class="replace__action--vesion1">
+						<div class="list__group--item replace__action--vesion2">
+							<div class="list__group--item replace__action--vesion3">
+								<a href="" class="list__group--item--link">
+									<div class="list__group--item--navigation replace__action--vesion4 none__none">
+										<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/3-2.png" alt="">
+									</div>
+		
+									<div class="list__group--item--content replace__action--vesion5 replace__action--fix--vision--1">
+										<h5 class="list__group--item--content--siv">Tùy chỉnh và thay đổi giao diện nhanh chóng, dễ dàng với các thao tác cơ bản</h5>
+									</div>		
+								</a>
+								
+							</div>
+						</div>
+
+						<div class="list__group--item replace__action--vesion2">
+							<div class="list__group--item replace__action--vesion3">
+								<a href="" class="list__group--item--link">
+									<div class="list__group--item--navigation replace__action--vesion4 none__none">
+										<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/7-1.png" alt="">
+									</div>
+		
+									<div class="list__group--item--content replace__action--vesion5 replace__action--fix--vision--1">
+										<h5 class="list__group--item--content--siv replace__action--ss5--fix--mobile">Với VinaWebsite bạn không còn cần tốn quá nhiều chi phí thiết kế</h5>
+									</div>		
+								</a>
+								
+							</div>
+						</div>
+
+						<div class="list__group--item replace__action--vesion2">
+							<div class="list__group--item replace__action--vesion3">
+								<a href="" class="list__group--item--link">
+									<div class="list__group--item--navigation replace__action--vesion4 none__none">
+										<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/6-1.png" alt="">
+									</div>
+		
+									<div class="list__group--item--content replace__action--vesion5 replace__action--fix--vision--2">
+										<h5 class="list__group--item--content--siv">Một Website chuyên nghiệp sẽ khẳng định vị thế của bạn với đối tác và khách hàng.</h5>
+									</div>		
+								</a>
+								
+							</div>
+						</div>
+
+						<div class="list__group--item replace__action--vesion2">
+							<div class="list__group--item replace__action--vesion3">
+								<a href="" class="list__group--item--link">
+									<div class="list__group--item--navigation replace__action--vesion4 none__none">
+										<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/5-2.png" alt="">
+									</div>
+		
+									<div class="list__group--item--content replace__action--vesion5 replace__action--fix--vision--2">
+										<h5 class="list__group--item--content--siv">Dữ liệu được mã hóa và bảo mật 247 với Server Dell mạnh mẽ</h5>
+									</div>		
+								</a>
+								
+							</div>
+						</div>
+
+						
+
+						
+					</div> 				
+				</div>
+
+
+			<!-- Khach hang -->
+
+
+			<div class="notication__client">
+				<div class="notication__client--grow">
+					<div class="notication__client--grow--first">
+					</div>
+
+					<p class="notication__client--grow--second">KHÁCH HÀNG
+					</p>
+
+					<div class="notication__client--grow--thirdly"></div>
+				</div>
+
+
+				<div class="notication__client--investors">
+					<div class="notication__client--investors--1">
+						<img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh2.png" alt="">
+					</div>
+					<div class="notication__client--investors--1">
+						<img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh3.png" alt="">
+					</div>
+					<div class="notication__client--investors--1">
+						<img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh4.png" alt="">
+					</div>
+					<div class="notication__client--investors--1">
+						<img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh5.png" alt="">
+					</div>
+					<div class="notication__client--investors--1">
+						<img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logokh7.png" alt="">
+					</div>
+					<div class="notication__client--investors--1">
+						<img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh6.png" alt="">
+					</div>
+					<div class="notication__client--investors--1">
+						<img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh1.png" alt="">
+					</div>
+
+				</div>
+			</div>
+
+
+			<!-- Support client -->
+
+
+			<div class="support__client">
+				<div class="support__client--hotline">
+
+					<div class="support__client--hotline--1">
+						<h3>hotline hỗ trợ</h3>
+					</div>
+
+					<div class="support__client--hotline--2">
+						<span>1900 6046</span>
+					</div>
+
+					<div class="support__client--hotline--3">
+						<p >Nơi Khách Hàng Được Tôn Vinh sale@vinawebsite.vn</p>
+					</div>
+
+
+				</div>
+
+				<div class="support__client--register">
+					<div class="support__client--register--1">
+						<h3>ĐĂNG KÝ NHẬN KHUYẾN MÃI</h3>
+					</div>
+
+					<div class="support__client--register--2">
+						<span>Những thông tin về sản phẩm mới, sự kiện và khuyến mãi</span>					
+					</div>
+
+					<div class="support__client--register--3">
+						<input type="input" placeholder="Nhập Email của bạn vào đây...">
+					</div>
+
+					<div class="support__client--register--4">
+						<select name="" id="" class="support__client--register--extra">
+							<option value="">Chọn mục bạn muốn nhận tin</option>
+							<option value="1">Mục A</option>
+							<option value="2">Mục B</option>
+							<option value="3">Mục C</option>
+						</select>
+
+						<div class="support__client--register--extra2">
+							<a href="">Gửi ngay</a>
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="footer__content">
+			<div class="footer__content--display">
+				<h3>Kho giao diện website</h3>
+			</div>
+
+			<div class="footer__content--block">
+				<div class="footer__content--info">
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website doanh nghiệp
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website bán hàng
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website xây dựng
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website nội thất
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website du lịch
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website bất động sản
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website văn phòng phẩm
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website mỹ phẩm
+					</div>
+				</div>
+	
+				
+				<div class="footer__content--info--2">
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website điện lạnh
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website thiết bị, dụng cụ
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website vận chuyển
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website giáo dục
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website bảo hành - sửa chữa
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website thiết kế in ấn
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website thực phẩm
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website quà tặng
+					</div>
+				</div>
+
+				<div class="footer__content--info--2">
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website linh kiện - điện tử
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website dịch vụ
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website bệnh viện - y tế
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website nhà hàng - khách sạn
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website nông sản - thuỷ sản
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website giải trí
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website ô tô - xe máy
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website phòng cháy chữa cháy
+					</div>
+				</div>
+
+				<div class="footer__content--info--2">
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website thương mại - điện tử
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website thời trang
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website Spa & thẩm mỹ viện
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website công nghiệp
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website viện khoa học
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website dịch vụ bảo vệ
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website nhà hàng tiệc cưới
+					</div>
+					<div class="footer__content--sample">
+						<i class="fas fa-check"></i>
+						Mẫu website nhà hàng quán ăn
+					</div>
+				</div>
+
+			</div>
+
+			<!-- CITY -->
+
+			<div class="footer__content--line">
+			</div>
+
+			<div class="footer__content--city">
+				<div class="footer__content--city--vinahost">
+					<div class="footer__content--city--vinahost--bonut">
+						<h3>Công ty vinahost</h3>
+					</div>
+
+					<div class="footer__content--city--vinahost--indress">
+						<i class="fas fa-home"></i>
+						<p>TP.HỒ CHÍ MINH: C/c Cửu Long, 351/31 Nơ Trang Long, P.13, Bình Thạnh, TP.Hồ Chí Minh
+							<br>
+						HÀ NỘI: 56 Vương Thừa Vũ,P. Khương Trung, Q. Thanh Xuân, TP. Hà Nội</p>
+					</div>
+
+					<div class="footer__content--city--vinahost--indress--second">
+						<i class="fas fa-phone-square-alt"></i>
+						<p> 1900 6046 – (028) 7300 6046</p>
+					</div>
+
+					<div class="footer__content--city--vinahost--indress--thirdly">
+						<i class="fas fa-envelope"></i>
+						<p> sale@vinawebsite.vn</p>
+					</div>
+
+
+				</div>
+
+
+
+
+				<div class="footer__content--city--support">
+					<div class="footer__content--city--support--client">
+						<h3>Hỗ trợ khách hàng</h3>
+					</div>
+					
+					<div class="footer__content--city--support--client--2">
+						<div class="footer__content--sample--extra2">
+							<i class="fas fa-check"></i>
+							Hướng dẫn thanh toán
+						</div>
+
+						<div class="footer__content--sample--extra2">
+							<i class="fas fa-check"></i>
+							Chính sách chung
+						</div>
+
+						<div class="footer__content--sample--extra2">
+							<i class="fas fa-check"></i>
+							Tài liệu hỗ trợ
+						</div>
+
+						<div class="footer__content--sample--extra2">
+							<i class="fas fa-check"></i>
+							Liên hệ
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+
+		<!-- nhan hieu -->
+
+
+		<div class="footer__content--brand">
+
+			<div class="footer__content--brand--vinahost">
+
+				<div class="footer__content--brand--vinahost--1">
+					<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/logo-da-thong-bao-voi-bo-cong-thuong.png" alt="">
+				</div>
+
+				<div class="footer__content--brand--vinahost--2">
+					<img src="https://vinawebsite.vn/wp-content/uploads/2018/08/fanpage.png" alt="">
+				</div>
+
+			</div>
+
+
+			<div class="footer__content--brand--icon">
+				<div class="footer__content--brand--icon--1">
+					<div class="footer__content--brand--icon--extra1">
+						<p>Follow Facebook</p>
+					</div>
+					<i class="fab fa-facebook-f"></i>
+				</div>
+
+				<div class="footer__content--brand--icon--2">
+					<div class="footer__content--brand--icon--extra1">
+						<p>Follow Twitter</p>
+					</div>
+					<i class="fab fa-twitter"></i>
+				</div>
+
+				<div class="footer__content--brand--icon--3">
+					<div class="footer__content--brand--icon--extra1">
+						<p>Follow Youtube</p>
+					</div>
+					<i class="fab fa-youtube"></i>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<!-- cam on -->
+
+		<div class="thanks-client">
+			<h5>Nguồn từ HiếuPmv.</h5>
+		</div>
+
+
+	</div>
+</body>
+</html>
+
+<!-- https://vinawebsite.vn/ -->
+
+
+<!-- 1/9/2021---7/9/2021 -->
